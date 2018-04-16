@@ -24,7 +24,7 @@ win.addch(food[0], food[1], '*')
 while key != 27:                                                  
     win.border(0)
     win.addstr(0, 2, 'Score : ' + str(score) + ' ')                
-    win.addstr(0, 27, ' SNAKE ')                                   
+    win.addstr(0, 27, ' SNAKE GAME')                                   
     win.timeout(150 - (len(snake)/5 + len(snake)/10)%120)          
     
     prevKey = key                                               
@@ -71,4 +71,4 @@ while key != 27:
     
 curses.endwin()
 print("\nScore - " + str(score))
-print("http://bitemelater.in\n")
+print("GAME OVER")
